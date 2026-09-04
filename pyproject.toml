@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools >= 69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nexerra-experiments"
+version = "0.1.0"
+description = "Prototype and supplementary workflows related to Nexerra-R1"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE.md" }
+dependencies = [
+    "numpy>=1.26,<2.0",
+    "pandas>=2.2,<3.0",
+    "rdkit>=2024.3,<2025.0",
+    "tqdm>=4.67,<5.0",
+]
+
+[project.optional-dependencies]
+bio = [
+    "matplotlib>=3.8,<4.0",
+    "pyarrow>=14.0,<20.0",
+    "scikit-learn>=1.6,<2.0",
+    "umap-learn>=0.5,<0.6",
+]
+gcmc = []
+dev = [
+    "pytest>=8.0,<9.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
