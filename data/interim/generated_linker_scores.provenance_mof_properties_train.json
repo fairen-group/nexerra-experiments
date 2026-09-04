@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-02-11T18:51:11.282402+00:00",
+  "sources": {
+    "C:\\Users\\ivan\\PhD.NexterraReward\\data\\raw\\MOF_properties_train.csv": "d01325938b1094e9b1e97607bcaefe5f98420201cebfb5d457974ff1a2401ec6",
+    "C:\\Users\\ivan\\PhD.NexterraReward\\data\\raw\\Acute Toxicity_mouse_intravenous_LD50_with_units.csv": "d94ad3e9d9a9a8e0d3a48d8082df43395ce11e3589fff06d1548289aa4d204b4",
+    "C:\\Users\\ivan\\PhD.NexterraReward\\data\\raw\\MOF_metal_toxicity.csv": "1a1b1f673a1f256e84fa37a7ead7c1c2f4669ff18085d78b3df3c5ec1c2821c3"
+  },
+  "code_version": "8df8f9da3fc003c920604e0f2f5116c402eaeeb7"
+}

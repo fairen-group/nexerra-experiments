@@ -1,0 +1,245 @@
+{
+  "created_utc": "2026-03-10T20:09:04.922518+00:00",
+  "source_file": "data/raw/Acute Toxicity_mouse_intravenous_LD50_with_units.csv",
+  "settings": {
+    "categories": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "sample_per_category": 15,
+    "seed": 42,
+    "init_points": 8,
+    "iters": 12,
+    "acq_candidates": 1500,
+    "margin": 0.02,
+    "order_penalty": 3.0,
+    "cat5_bonus": 0.4,
+    "tox_severity_exp_alpha": 0.6
+  },
+  "sample_counts": {
+    "cat_1": 15,
+    "cat_2": 15,
+    "cat_3": 15,
+    "cat_4": 15,
+    "cat_5": 15
+  },
+  "baseline_metrics": {
+    "objective": 0.23626331660360295,
+    "tox_weighted_mean": 0.44886272840568636,
+    "ranking_penalty": 0.0,
+    "cat1_lt_cat4": true,
+    "cat1_lt_cat5": true,
+    "category_means": {
+      "cat_1": 0.44187726478312034,
+      "cat_2": 0.4386209978502786,
+      "cat_3": 0.4608049222827307,
+      "cat_4": 0.5033659676515392,
+      "cat_5": 0.5314985295052085
+    }
+  },
+  "optimized_metrics": {
+    "objective": 0.21470729122617677,
+    "tox_weighted_mean": 0.41085777260153433,
+    "ranking_penalty": 0.0,
+    "cat1_lt_cat4": true,
+    "cat1_lt_cat5": true,
+    "category_means": {
+      "cat_1": 0.42213122102249934,
+      "cat_2": 0.3794813545899508,
+      "cat_3": 0.41014476909695424,
+      "cat_4": 0.44812993745200835,
+      "cat_5": 0.4903762034383939
+    }
+  },
+  "optimized_weights": {
+    "REWARD_COMPONENT_WEIGHTS": {
+      "safety": 0.14178604664338507,
+      "performance": 0.6759089134929895,
+      "benign_linkers": 0.11810042738392276,
+      "stability": 0.06420461247970272
+    },
+    "SAFETY_SUBWEIGHTS": {
+      "metal": 0.19198778673639527,
+      "toxicity": 0.6686252910169185,
+      "formal_charge": 0.13938692224668606
+    },
+    "PERFORMANCE_SUBWEIGHTS": {
+      "length": 0.12374365578819761,
+      "solubility": 0.08517598335255362,
+      "surface_loading": 0.7910803608592488
+    },
+    "BENIGN_LINKER_SUBWEIGHTS": {
+      "charge": 0.012699742418154743,
+      "payload_interaction": 0.8325857222701852,
+      "alerts": 0.1547145353116599
+    },
+    "STABILITY_SUBWEIGHTS": {
+      "metal_stability": 0.16769530617264622,
+      "linker_stability": 0.06577083309772547,
+      "solubility": 0.5183412286610293,
+      "charge_release": 0.2481926320685991
+    },
+    "LINKER_STABILITY_SUBWEIGHTS": {
+      "symmetry": 0.24713812402564095,
+      "rigidity": 0.752861875974359
+    }
+  },
+  "baseline_weights": {
+    "REWARD_COMPONENT_WEIGHTS": {
+      "safety": 0.15,
+      "performance": 0.55,
+      "benign_linkers": 0.15,
+      "stability": 0.15
+    },
+    "SAFETY_SUBWEIGHTS": {
+      "metal": 0.1,
+      "toxicity": 0.8,
+      "formal_charge": 0.1
+    },
+    "PERFORMANCE_SUBWEIGHTS": {
+      "length": 0.15,
+      "solubility": 0.1,
+      "surface_loading": 0.75
+    },
+    "BENIGN_LINKER_SUBWEIGHTS": {
+      "charge": 0.1,
+      "payload_interaction": 0.6,
+      "alerts": 0.3
+    },
+    "STABILITY_SUBWEIGHTS": {
+      "metal_stability": 0.25,
+      "linker_stability": 0.1,
+      "solubility": 0.3,
+      "charge_release": 0.35
+    },
+    "LINKER_STABILITY_SUBWEIGHTS": {
+      "symmetry": 0.1,
+      "rigidity": 0.9
+    }
+  },
+  "search_history": [
+    {
+      "phase": "init",
+      "step": 0.0,
+      "objective": 0.4124068701987345,
+      "best": 0.4124068701987345
+    },
+    {
+      "phase": "init",
+      "step": 1.0,
+      "objective": 0.3603757584065083,
+      "best": 0.3603757584065083
+    },
+    {
+      "phase": "init",
+      "step": 2.0,
+      "objective": 0.2997190518233909,
+      "best": 0.2997190518233909
+    },
+    {
+      "phase": "init",
+      "step": 3.0,
+      "objective": 0.38940498397987006,
+      "best": 0.2997190518233909
+    },
+    {
+      "phase": "init",
+      "step": 4.0,
+      "objective": 0.3198038747572644,
+      "best": 0.2997190518233909
+    },
+    {
+      "phase": "init",
+      "step": 5.0,
+      "objective": 0.31196416894877216,
+      "best": 0.2997190518233909
+    },
+    {
+      "phase": "init",
+      "step": 6.0,
+      "objective": 0.26527600869975676,
+      "best": 0.26527600869975676
+    },
+    {
+      "phase": "init",
+      "step": 7.0,
+      "objective": 0.27247863440410974,
+      "best": 0.26527600869975676
+    },
+    {
+      "phase": "bayes",
+      "step": 0.0,
+      "objective": 0.2788533222563276,
+      "best": 0.26527600869975676
+    },
+    {
+      "phase": "bayes",
+      "step": 1.0,
+      "objective": 0.30689446487901983,
+      "best": 0.26527600869975676
+    },
+    {
+      "phase": "bayes",
+      "step": 2.0,
+      "objective": 0.25276241938970256,
+      "best": 0.25276241938970256
+    },
+    {
+      "phase": "bayes",
+      "step": 3.0,
+      "objective": 0.22737621658365773,
+      "best": 0.22737621658365773
+    },
+    {
+      "phase": "bayes",
+      "step": 4.0,
+      "objective": 0.2357581785553841,
+      "best": 0.22737621658365773
+    },
+    {
+      "phase": "bayes",
+      "step": 5.0,
+      "objective": 0.3083098229754698,
+      "best": 0.22737621658365773
+    },
+    {
+      "phase": "bayes",
+      "step": 6.0,
+      "objective": 0.24387714633368957,
+      "best": 0.22737621658365773
+    },
+    {
+      "phase": "bayes",
+      "step": 7.0,
+      "objective": 0.2623164247129304,
+      "best": 0.22737621658365773
+    },
+    {
+      "phase": "bayes",
+      "step": 8.0,
+      "objective": 0.2306119316500465,
+      "best": 0.22737621658365773
+    },
+    {
+      "phase": "bayes",
+      "step": 9.0,
+      "objective": 0.22805257827699082,
+      "best": 0.22737621658365773
+    },
+    {
+      "phase": "bayes",
+      "step": 10.0,
+      "objective": 0.28446720674629267,
+      "best": 0.22737621658365773
+    },
+    {
+      "phase": "bayes",
+      "step": 11.0,
+      "objective": 0.21470729122617677,
+      "best": 0.21470729122617677
+    }
+  ]
+}
